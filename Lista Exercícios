@@ -1,0 +1,98 @@
+#1 - imprimir a frase
+print ("Eu sou minerador de dados")
+
+#2 - operações matemáticas
+print (4+5)
+print (3*2)
+print (5/2)
+print (10-5)
+
+#3 e 4 - imprimir valores int e float
+print (type(int(5.656)))
+print (float(5.645454))
+
+#5 - passar o valor float para string
+type (str (float(5.654654)))
+
+#6 - arredondar o número 2.898
+print (round (2.898))
+print (round (2.4545455,4))
+
+#7 - variaveis
+nome = "wendel"
+print (type(nome))
+
+nome += " pires"
+print (nome)
+
+email, idade = "wendelspires@hotmail.com", 23
+email,idade
+
+#9 - strings
+
+frase = "Python é uma maldição"
+print (frase)
+
+#imprimir os seis primeiros caracteres
+print (frase[:6])
+
+#contar todos os caracteres
+print (len (frase))
+
+#contar quantas vezes a palavra dados aparece
+frase2 = "dados é o novo petróleo, em Deus eu confio, para o resto me traga dados."
+print (frase2.count("dados"))
+
+#primeira palavra com letra maiuscula
+print (frase2.capitalize())
+
+#Quebre as palavras da frase separado por virgula, criando uma lista.
+frase2.split(',')
+
+#10 - listas
+
+#criar listas com o nome idades
+idade = [15,16,17,18,19,21,23,25,21,23,24,28]
+print (idade[1])
+
+#contagem de valores da lista
+print (len (idade))
+
+#Substitua o valor do segundo elemento da lista e imprima o resultado.
+idade[1] = 17
+print (idade)
+
+#Imprima apenas os valores do segundo elemento em diante.
+print (idade[1:])
+
+#Remova qualquer elemento da lista e imprima o resultado.
+idade.remove(21)
+print (idade)
+
+#salarios
+salarios = [900,1200,1500,800,12587,10000]
+print (salarios.count(10000))
+
+print (10000 in salarios)
+
+#menor e maior valor da lista
+print (min(salarios))
+print (max(salarios))
+
+#adicionar o valor 7000 na lista
+salarios.append(7000)
+print (salarios)
+
+#Extenda a lista com dois novos elementos utilizando apenas um método.
+salarios.extend([900,1100])
+print (salarios)
+
+#Imprima o índice do elemento de valor 800 da lista de salarios.
+print (salarios.index(800))
+
+#Faça uma ordenação dos valores da lista de salarios em ordem crescente e decrescente.
+salarios.sort()
+print (salarios)
+
+salarios.sort(reverse=True)
+print(salarios)
